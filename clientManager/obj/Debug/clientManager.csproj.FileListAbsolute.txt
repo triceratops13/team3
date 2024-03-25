@@ -18,3 +18,13 @@ D:\Study\С#\Team project\team3\clientManager\obj\Debug\clientManager.pdb
 D:\Study\С#\Team project\team3\clientManager\bin\Debug\clientManager.exe.config
 D:\Study\С#\Team project\team3\clientManager\bin\Debug\clientManager.exe
 D:\Study\С#\Team project\team3\clientManager\bin\Debug\clientManager.pdb
+C:\Users\Support\team3\clientManager\bin\Debug\clientManager.exe.config
+C:\Users\Support\team3\clientManager\bin\Debug\clientManager.exe
+C:\Users\Support\team3\clientManager\bin\Debug\clientManager.pdb
+C:\Users\Support\team3\clientManager\obj\Debug\clientManager.csproj.AssemblyReference.cache
+C:\Users\Support\team3\clientManager\obj\Debug\clientManager.Form1.resources
+C:\Users\Support\team3\clientManager\obj\Debug\clientManager.Properties.Resources.resources
+C:\Users\Support\team3\clientManager\obj\Debug\clientManager.csproj.GenerateResource.cache
+C:\Users\Support\team3\clientManager\obj\Debug\clientManager.csproj.CoreCompileInputs.cache
+C:\Users\Support\team3\clientManager\obj\Debug\clientManager.exe
+C:\Users\Support\team3\clientManager\obj\Debug\clientManager.pdb
