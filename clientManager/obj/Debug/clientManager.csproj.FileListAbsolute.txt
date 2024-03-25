@@ -8,3 +8,13 @@ C:\Users\Support\source\repos\clientManager\clientManager\obj\Debug\clientManage
 C:\Users\Support\source\repos\clientManager\clientManager\obj\Debug\clientManager.csproj.CoreCompileInputs.cache
 C:\Users\Support\source\repos\clientManager\clientManager\obj\Debug\clientManager.exe
 C:\Users\Support\source\repos\clientManager\clientManager\obj\Debug\clientManager.pdb
+D:\Study\С#\Team project\team3\clientManager\obj\Debug\clientManager.csproj.AssemblyReference.cache
+D:\Study\С#\Team project\team3\clientManager\obj\Debug\clientManager.Form1.resources
+D:\Study\С#\Team project\team3\clientManager\obj\Debug\clientManager.Properties.Resources.resources
+D:\Study\С#\Team project\team3\clientManager\obj\Debug\clientManager.csproj.GenerateResource.cache
+D:\Study\С#\Team project\team3\clientManager\obj\Debug\clientManager.csproj.CoreCompileInputs.cache
+D:\Study\С#\Team project\team3\clientManager\obj\Debug\clientManager.exe
+D:\Study\С#\Team project\team3\clientManager\obj\Debug\clientManager.pdb
+D:\Study\С#\Team project\team3\clientManager\bin\Debug\clientManager.exe.config
+D:\Study\С#\Team project\team3\clientManager\bin\Debug\clientManager.exe
+D:\Study\С#\Team project\team3\clientManager\bin\Debug\clientManager.pdb
