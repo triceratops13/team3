@@ -1,11 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
+using System.Text.Json;
 using System.Windows.Forms;
 
 namespace clientManager
 {
+    [Serializable]
+    public class ClientsList
+    {
+        public string Name { get; set; }
+        public int Id { get; set; }
+        public string Type { get; set; }
+        public string Date { get; set; } // Added Date property
+
+        public ClientsList(string date)
+        {
+            this.Date = date; // Initialize Date property
+        }
+    }
+
     public class ClientBuilder
     {
         private Client client;
@@ -29,7 +44,7 @@ namespace clientManager
 
         public Client Build()
         {
-            client.GenerateIdNumber(); 
+            client.GenerateIdNumber();
             return client;
         }
     }
@@ -40,14 +55,13 @@ namespace clientManager
         public int Id { get; private set; }
         public string Type { get; set; }
 
-        private static int clientNumber = 0;
+        private static DateTime date = DateTime.Now;
+        private List<Client> clients;
 
         public Client()
         {
             clients = new List<Client>();
         }
-
-        private List<Client> clients;
 
         public void GenerateIdNumber()
         {
@@ -56,6 +70,21 @@ namespace clientManager
         public void AddClient(Client client)
         {
             clients.Add(client);
+
+            ClientsList clientsList = new ClientsList(date.ToLongDateString());
+
+            clientsList.Name = client.Name;
+            clientsList.Id = client.Id;
+            clientsList.Type = client.Type;
+
+            string path = date.ToLongTimeString();
+            path = path.Replace(":", "-");
+
+            using (FileStream file = new FileStream($"..\\..\\{path}.json", FileMode.Create))
+            {
+                JsonSerializer.Serialize<ClientsList>(file, clientsList);
+            }
+
         }
         public void EditClient(int clientId, string newName, string newType)
         {
@@ -81,5 +110,7 @@ namespace clientManager
             string[] row = { Id.ToString(), Name, Type };
             return new ListViewItem(row);
         }
+
+        private static int clientNumber = 0;
     }
 }
