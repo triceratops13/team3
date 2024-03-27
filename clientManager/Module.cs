@@ -13,11 +13,10 @@ namespace clientManager
         public string Name { get; set; }
         public int Id { get; set; }
         public string Type { get; set; }
-        public string Date { get; set; } // Added Date property
-
+        public string Date { get; set; } 
         public ClientsList(string date)
         {
-            this.Date = date; // Initialize Date property
+            this.Date = date; 
         }
     }
 
